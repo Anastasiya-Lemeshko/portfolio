@@ -36,12 +36,36 @@
   width: var(--info-width);
 }
 
-.profile__portfolio {
+.profile__portfolio-wrapper {
+  position: relative;
+
   @media #{$tablet-width} {
     grid-area: 1 / 2 / 2 / 3;
   }
 
   @media (min-width: 1800px) {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 3 / 2 / 5;
   }
+}
+
+.profile__portfolio-wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $bg-dark;
+  mask-image: url("../../images/pattern.svg");
+  mask-size: 500px auto;
+}
+
+.profile__portfolio {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  max-width: 1350px;
+  margin-right: auto;
+  background-color: $bg-light;
+  z-index: 1;
 }
