@@ -1,0 +1,24 @@
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skills__item {
+  padding: 5px 15px;
+  font-weight: 700;
+  color: $text-dark;
+  border-radius: 10px;
+  background-color: rgba($bg-accent, 0.7);
+
+  @media #{$tablet-width} {
+    font-size: 14px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "@stylistic/indentation": [
+      2,
+      {
+        "ignore": [
+          "inside-parens"
+        ]
+      }
+    ]
+  }
+}

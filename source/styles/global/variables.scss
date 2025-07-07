@@ -1,0 +1,30 @@
+// Fonts
+
+$primary-font: "Manrope", "Arial", sans-serif;
+
+// Colors
+
+$bg-dark: #7a3535;
+$bg-light: #e9ddd5;
+$text-dark: #172f47;
+$bg-accent: #ffe17e;
+$transparent: rgba(255, 255, 255, 0);
+$white: #ffffff;
+
+// Breakpoint
+
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;
+$breakpoint-gap: 0.02px;
+
+// Viewports
+
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-width: "(min-width: #{$breakpoint-tablet})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-width: "(min-width: #{$breakpoint-desktop})";
+
+
+// Adaptive sizes
+
+$max-content-width: 1800px;

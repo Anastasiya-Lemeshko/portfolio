@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 0;
+  background-color: #dfb86c;
+  color: $text-dark;
+  box-shadow: 0 0 20px $transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.3s, opacity 0.3s;
+  cursor: pointer;
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 20px #ffd700;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.button--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
