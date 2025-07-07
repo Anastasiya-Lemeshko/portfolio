@@ -1,0 +1,1 @@
+var e=()=>{let t=document.createElement("li");return t.classList.add("portfolio__item","portfolio__item--close","portfolio__item--back"),t.style.zIndex="-1",t.setAttribute("aria-hidden","true"),t};export{e as addItem};

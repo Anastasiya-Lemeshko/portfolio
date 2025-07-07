@@ -1,0 +1,1 @@
+var e=document.querySelector(".portfolio"),r=e.querySelectorAll("a"),c=t=>{t.forEach(o=>{o.setAttribute("tabindex","-1")})},i=t=>{t.forEach(o=>{o.setAttribute("tabindex","0")})};c(r);export{c as hideFocus,i as setTabIndex};
