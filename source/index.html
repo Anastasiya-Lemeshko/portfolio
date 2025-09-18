@@ -67,6 +67,90 @@
           <li class="portfolio__item" tabindex="0">
             <div class="portfolio__image-wrapper">
               <picture>
+                <source width="900" height="500" type="image/webp" media="(min-width: 768px)" srcset="images/preview/paratype-tablet@1x.webp 1x, images/preview/paratype-tablet@2x.webp 2x">
+                <source width="504" height="280" type="image/webp" srcset="images/preview/paratype-mobile@1x.webp 1x, images/preview/paratype-mobile@2x.webp 2x">
+                <source width="900" height="500" type="image/jpg" media="(min-width: 768px)" srcset="images/preview/paratype-tablet@1x.jpg 1x, images/preview/paratype-tablet@2x.jpg 2x">
+                <img class="portfolio__image" src="images/preview/paratype-mobile@1x.jpg" srcset="images/preview/paratype-mobile@2x.jpg 2x" width="504" height="280" alt="Скриншот главной страницы проекта Paratype.">
+              </picture>
+              <div class="portfolio__links">
+                <a class="portfolio__link button" href="https://github.com/Anastasiya-Lemeshko/paratype" target="_blank" rel="noreferrer noopener">Перейти к&nbsp;репозиторию</a>
+                <a class="portfolio__link button" href="https://anastasiya-lemeshko.github.io/paratype/" target="_blank" rel="noreferrer noopener">Открыть проект</a>
+              </div>
+            </div>
+            <div class="portfolio__description description">
+              <h3 class="description__title">Проект, выполненный в&nbsp;рамках Чемпионата&nbsp;по&nbsp;верстке&nbsp;2025 «Paratype»</h3>
+              <p class="description__info">Самостоятельно выполненный проект, занявший <b>1&nbsp;место</b> в&nbsp;Чемпионате по&nbsp;верстке.</p>
+              <ul class="description__info description__info--list">
+                <li>Шрифт: https://www.paratype.ru/</li>
+                <li>Дизайн, макет: https://wemakefab.ru/</li>
+                <li>Организатор: https://htmlacademy.ru/</li>
+              </ul>
+              <div>
+                <h4 class="description__task-title">Обзор выполненных задач</h4>
+                <ul class="description__task-list">
+                  <li class="description__task-item">
+                    <h5 class="description__task-subtitle">Написание HTML-разметки</h5>
+                    <p class="description__text">Создание семантически правильной и структурированной HTML-разметки, обеспечивающей доступность и SEO&#8205;-&#8205;оптимизацию.</p>
+                  </li>
+                  <li class="description__task-item">
+                    <h5 class="description__task-subtitle">Адаптивная верстка на SCSS</h5>
+                    <ul class="description__task-sublist">
+                      <li>разработаны адаптивные стили с использованием SCSS, обеспечивающих корректное отображение сайта на различных устройствах (desktop, tablet, mobile)</li>
+                      <li>реализована <b>резиновая</b> верстка и <b>скейлинг*</b> отдельных элементов, обеспечивающие масштабирование контента между брекпоинтами для гибкого отображения</li>
+                      <li>использован подход <b>Mobile First</b>, гарантирующий оптимальное отображение на мобильных устройствах</li>
+                    </ul>
+                  </li>
+                  <li class="description__task-item">
+                    <h5 class="description__task-subtitle">Реализация JavaScript &nbsp;<br>функциональности</h5>
+                    <p class="description__text">Добавление интерактивных элементов и динамической логики с&nbsp;использованием JavaScript. Реализованы следующие функции в&nbsp;соответствии&nbsp;с&nbsp;ТЗ:</p>
+                    <ul class="description__task-sublist">
+                      <li>открытие/закрытие мобильного <b>меню</b> в&nbsp;шапке сайта на&nbsp;мобильной и планшетной версиях</li>
+                      <li><b>анимация ссылок</b> в&nbsp;навигации по&nbsp;ховеру в&nbsp;десктопе</li>
+                      <li><b>слайдеры</b> в&nbsp;промо-блоке и в&nbsp;карточках шрифта с&nbsp;возможностью переключения слайдов с&nbsp;помощью кнопок пагинации и по&nbsp;свайпу на&nbsp;мобильной и планшетной версиях</li>
+                      <li>всплывающая кнопка <b>скролла к&nbsp;началу страницы</b> (с&nbsp;использованием debounce)</li>
+                      <li><b>кастомный селект</b> в&nbsp;блоке с&nbsp;карточками шрифтов на&nbsp;мобильной и планшетной версиях</li>
+                      <li><b>смена изображения по&nbsp;ховеру</b> в&nbsp;карточках шрифта на&nbsp;десктопе (с&nbsp;использованием debounce)</li>
+                      <li><b>раскрывающееся описание</b> шрифта по&nbsp;ховеру на&nbsp;десктопной версии</li>
+                      <li><b>раскрывающееся описание</b> шрифта при нажатии на кнопку «+» на&nbsp;мобильной версии</li>
+                      <li><b>валидация данных</b> в&nbsp;форме подписки</li>
+                      <li><b>кастомизация браузерных сообщений</b> об&nbsp;ошибках при вводе невалидных данных и их&nbsp;вывод после попытки отправки формы</li>
+                      <li><b>улучшение производительности</b> за&nbsp;счет ограничения частоты вызовов функций, реализуемое с&nbsp;помощью функции debounce</li>
+                      <li><b>корректный порядок фокуса</b> при изменении сетки на&nbsp;разных версиях в&nbsp;хэдере и&nbsp;футере</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="description__libraries">
+                <h4 class="description__subtitle">Библиотеки</h4>
+                <ul class="description__libraries-list">
+                  <li>Проект выполнен без использования библиотек.</li>
+                </ul>
+              </div>
+              <div class="description__tools">
+                <h4 class="description__subtitle">Технологии и инструменты</h4>
+                <ul class="description__tools-list">
+                  <li>HTML5</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                  <li>BEM</li>
+                  <li>SVG-спрайты</li>
+                  <li>оптимизация графики</li>
+                  <li>резиновая верстка</li>
+                  <li>скейлинг</li>
+                  <li>Git</li>
+                  <li>VS Code</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="description__links">
+                <a class="description__link button" href="https://github.com/Anastasiya-Lemeshko/paratype" target="_blank" rel="noreferrer noopener">Перейти к&nbsp;репозиторию</a>
+                <a class="description__link button" href="https://anastasiya-lemeshko.github.io/paratype/" target="_blank" rel="noreferrer noopener">Открыть проект</a>
+              </div>
+            </div>
+          </li>
+          <li class="portfolio__item" tabindex="0">
+            <div class="portfolio__image-wrapper">
+              <picture>
                 <source width="900" height="500" type="image/webp" media="(min-width: 768px)" srcset="images/preview/internship-tablet@1x.webp 1x, images/preview/internship-tablet@2x.webp 2x">
                 <source width="504" height="280" type="image/webp" srcset="images/preview/internship-mobile@1x.webp 1x, images/preview/internship-mobile@2x.webp 2x">
                 <source width="900" height="500" type="image/jpg" media="(min-width: 768px)" srcset="images/preview/internship-tablet@1x.jpg 1x, images/preview/internship-tablet@2x.jpg 2x">

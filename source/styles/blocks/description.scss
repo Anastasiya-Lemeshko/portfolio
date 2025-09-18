@@ -34,6 +34,8 @@
 .description__info {
   position: relative;
   margin: 0 0 30px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .description__info::after {
