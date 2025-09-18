@@ -88,7 +88,6 @@ const onProjectClick = (activeCard) => {
   const currentCard = portfolio.querySelector('.portfolio__item--open');
 
   if (activeCard && SLIDER_WIDTH.matches && activeCard !== currentCard) {
-
     const previousCard = projectList.querySelector('.portfolio__item--open');
     const indexPreviousCard = projects.indexOf(previousCard);
     const indexActiveCard = projects.indexOf(activeCard);
@@ -117,7 +116,6 @@ const onProjectClick = (activeCard) => {
       if (previousCard) {
         hideDescription(previousCard);
       }
-
       showDescription(activeCard);
     } else {
       hideDescription(activeCard);
@@ -130,14 +128,14 @@ projectList.addEventListener('click', (evt) => {
     return;
   }
 
-  const activeCard = evt.target.closest('li');
+  const activeCard = evt.target.closest('.portfolio__item');
   onProjectClick(activeCard);
 });
 
 projectList.addEventListener('keydown', (evt) => {
   const activeCard = document.activeElement;
 
-  if (evt.key === 'Enter' && document.activeElement.tagName === 'LI') {
+  if (evt.key === 'Enter' && document.activeElement.classList.contains('portfolio__item')) {
     onProjectClick(activeCard);
   }
 });
@@ -174,7 +172,6 @@ const checkLayout = () => {
       });
 
       showDescription(currentCard);
-
       isTablet = false;
     }
   }
